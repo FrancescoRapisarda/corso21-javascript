@@ -24,4 +24,3 @@ const separator = "-";
 const result = convertStringToObject(inputString, separator);
 console.log(result);
 console.log(typeof(result))
-
