@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border-radius: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+  
+    
+    <!-- 
+        * giovedì 02.11.2023
+        * Function Custom
+        * 
+        * Creare una funzione basica
+        * Usarla nel codice
+        * Aggiungere Parametri
+        * Parametri di default
+    -->
+    <input type="text" name="numero" placeholder="inserisci un numero">
+    <button>Calcola Cubo!</button>
+    <h1>-</h1>
+
+    <script>
+        let button = document.querySelector('button');
+        let title = document.querySelector('h1');
+        let numero = document.querySelector('input');
+
+        
+        function cubo(number) {
+            let result = number * number * number;
+            console.log(result);
+            return result;      //il return è l'ultima cosa che facciamo, dopo non vengono eseguite altre istruzioni!
+            console.log("questo testo non lo mostra!");
+        }
+
+        button.addEventListener( 'click', () => title.innerHTML = cubo(numero.value) );
+
+    </script>
+
+
+</body>
+</html>

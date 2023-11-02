@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+  
+    
+    <!-- 
+        * giovedì 02.11.2023
+        * Function Custom
+        * 
+        * Creare una funzione basica
+        * Usarla nel codice
+        * Aggiungere Parametri
+        * Parametri di default
+    -->
+    <input type="text" name="name" placeholder="nome persona">
+    <button>Saluta!</button>
+    <h1>Nessun Saluto</h1>
+
+    <script>
+        let button = document.querySelector('button');
+        let title = document.querySelector('h1');
+        let nome = document.querySelector('input');
+
+        function saluta(name = "Francesco") {
+            title.innerHTML = `Ciao ${name}`;
+            //title.innerHTML = "Ciao Francesco";
+            //console.log(nome.value);
+        }
+
+        button.addEventListener('click', () => saluta(nome.value));
+        
+
+    </script>
+
+
+</body>
+</html>
