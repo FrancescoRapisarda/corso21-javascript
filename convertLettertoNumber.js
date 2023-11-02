@@ -23,4 +23,8 @@ const inputString = "A1-B2-C3";
 const separator = "-";
 const result = convertStringToObject(inputString, separator);
 console.log(result);
+<<<<<<< HEAD
 console.log(typeof(result));
+=======
+console.log(typeof(result))
+>>>>>>> 91de4b4c1465310ee28f7f8cd192e15175e8e4b9
